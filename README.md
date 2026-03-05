@@ -22,7 +22,10 @@ This type of perception system is important for space robotics tasks such as:
 * Satellite inspection missions
 
 # Model Result-
+* Sample Image-
+![img000195real](https://github.com/user-attachments/assets/26ebe99e-9d0b-4f04-9410-81f09ddd0e28)
 
+* 3d Image-
 ![3d_visualization](https://github.com/user-attachments/assets/86812dc9-8ab0-46ec-8b0c-548e560eadd4)
 
 ![distance_comparison](https://github.com/user-attachments/assets/e201ca9f-8264-4445-815c-e20e2b288183)
