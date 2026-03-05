@@ -1,5 +1,5 @@
 import torch
-from pose_model import poseNet
+from model_arch import poseNet
 
 model=poseNet()
 

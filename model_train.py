@@ -5,7 +5,7 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 
 from dataset_loader import satellitePose
-from pose_model import poseNet
+from model_arch import poseNet
 
 
 json_path = r"D:\Data centr\IMG_data\satellite_pose\speed\train.json"
@@ -103,6 +103,7 @@ torch.save(model.state_dict(), "SAT_Pose_model.pth")
 print("\nModel saved successfully")
 
 
+
 # plot training curve
 plt.figure(figsize=(8,5))
 plt.plot(epoch_losses, marker='o')
@@ -111,3 +112,4 @@ plt.xlabel("Epoch")
 plt.ylabel("Loss")
 plt.grid(True)
 plt.show()
+
