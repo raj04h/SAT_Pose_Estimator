@@ -98,7 +98,6 @@ if uploaded_file is not None:
         (0,4),(1,5),(2,6),(3,7)
     ]
 
-
     cube = cube @ R.T + t
     fig = go.Figure()
 
@@ -118,18 +117,12 @@ if uploaded_file is not None:
 
     # SATELLITE AXES
     origin = t
-
     axes = np.eye(3)
-
     colors = ['red', 'green', 'blue']
-
     labels = ["X axis", "Y axis", "Z axis"]
 
-
     for i in range(3):
-
         axis = axes[i] @ R.T
-
         fig.add_trace(go.Scatter3d(
             x=[origin[0], origin[0] + axis[0]],
             y=[origin[1], origin[1] + axis[1]],
@@ -141,9 +134,7 @@ if uploaded_file is not None:
 
     # LAYOUT
     fig.update_layout(
-
         title="3D Satellite Pose",
-
         scene=dict(
             xaxis_title="X",
             yaxis_title="Y",
